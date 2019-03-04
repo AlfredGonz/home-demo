@@ -1,15 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:home_sgb_demo/iconos/iconos.dart' as customIcons;
 
 
 class Inicio extends StatelessWidget {
   Widget build(BuildContext context) {
 
-    return new Scaffold(
-      
-        body: MenuBody(),
+        SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
+        statusBarColor: Colors.indigo[300]));
+
+    return new SafeArea(
+        child: Scaffold(
+          body: MenuBody(),
+        ),
        
     );
+        
   }
 }
 
@@ -55,7 +61,7 @@ class MenuBody extends StatelessWidget {
                     shape: new CircleBorder(),
                     elevation: 2.0,
                     fillColor: Colors.indigo[700],
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
                   ),
@@ -88,7 +94,7 @@ class MenuBody extends StatelessWidget {
                     shape: new CircleBorder(),
                     elevation: 2.0,
                     fillColor: Colors.indigo[700],
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
                   ),
@@ -122,7 +128,7 @@ class MenuBody extends StatelessWidget {
                     shape: new CircleBorder(),
                     elevation: 2.0,
                     fillColor: Colors.indigo[700],
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
                   ),
@@ -156,7 +162,7 @@ class MenuBody extends StatelessWidget {
                     shape: new CircleBorder(),
                     elevation: 2.0,
                     fillColor: Colors.indigo[700],
-                    padding: const EdgeInsets.all(15.0),
+                    padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
                   ),
