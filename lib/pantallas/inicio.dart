@@ -62,7 +62,7 @@ class MenuBody extends StatelessWidget {
                   Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos en Bolsa",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700]),)
+                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
                     ),
                     
                     flex: 1,
@@ -96,7 +96,7 @@ class MenuBody extends StatelessWidget {
                    Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos en Fondos",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700]),)
+                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
                     ),    
                     flex: 1,
                   )
@@ -129,7 +129,7 @@ class MenuBody extends StatelessWidget {
                  Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos Consolidados",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700]),)
+                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
                     ),
                     
                     flex: 1,
@@ -163,7 +163,7 @@ class MenuBody extends StatelessWidget {
                    Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Estado de cuenta",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700]),)
+                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
                     ),
                     
                     flex: 1,
@@ -177,7 +177,6 @@ class MenuBody extends StatelessWidget {
             
            
             );
-            
   }
 
   }
