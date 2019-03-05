@@ -5,13 +5,57 @@ import 'package:home_sgb_demo/iconos/iconos.dart' as customIcons;
 
 class Inicio extends StatelessWidget {
   Widget build(BuildContext context) {
-
+  
         SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle.dark.copyWith(
-        statusBarColor: Colors.indigo[300]));
+        statusBarColor: Colors.indigo[900]));
 
     return new SafeArea(
         child: Scaffold(
-          body: MenuBody(),
+          appBar: AppBar(
+            centerTitle: true,
+            title: Text("Servicios Generales Bursátiles ",
+            textAlign: TextAlign.center),
+            backgroundColor: Color.fromRGBO(23, 17, 85, 1),
+          ),
+          body: Container(
+            child: Stack(
+              fit: StackFit.loose,
+              children: <Widget>[
+                Container(
+                  padding: EdgeInsets.only( bottom: 20, top: 30 ),
+                  width: MediaQuery.of(context).size.width ,
+                  height: MediaQuery.of(context).size.height * 0.15,
+                  
+                  
+                    child: Column( 
+                      mainAxisSize: MainAxisSize.max,
+                      children: <Widget>[
+                       
+                      Flexible(
+                        flex: 1,
+                        child: Text("Bienvenido, Usario",
+                      style: TextStyle(fontSize: 22,
+                      color: Color.fromRGBO(23, 17, 85, 1),
+                      fontWeight: FontWeight.bold
+                      ), 
+                      )
+                      ),
+                      
+                 new Divider(
+                        color: Colors.indigo,
+                      ),
+                      ],
+                      
+                    ),
+                  
+                  
+                ),
+                
+
+                 MenuBody(),
+              ],
+            ),
+          )
         ),
        
     );
@@ -23,15 +67,8 @@ class MenuBody extends StatelessWidget {
   @override
   Widget build(BuildContext context){
     return  Container(
-            padding: EdgeInsets.only(top: 220, bottom: 10, right: 10, left: 10),
-            decoration: BoxDecoration(
-                color: Colors.white70,
-
-                image: DecorationImage(
-                    image: AssetImage(
-                      'assets/top.jpg'),
-                    alignment: Alignment.topCenter),
-                    ),
+            padding: EdgeInsets.only(top: 150, bottom: 10, right: 10, left: 10),
+            
                     
            
             child: GridView.count(
@@ -60,7 +97,7 @@ class MenuBody extends StatelessWidget {
                     ),
                     shape: new CircleBorder(),
                     elevation: 2.0,
-                    fillColor: Colors.indigo[700],
+                    fillColor: Color.fromRGBO(23, 17, 85, 1),
                     padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
@@ -68,7 +105,7 @@ class MenuBody extends StatelessWidget {
                   Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos en Bolsa",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
+                    style: TextStyle(color: Color.fromRGBO(23, 17, 85, 1),fontSize: 16),)
                     ),
                     
                     flex: 1,
@@ -93,7 +130,7 @@ class MenuBody extends StatelessWidget {
                     ),
                     shape: new CircleBorder(),
                     elevation: 2.0,
-                    fillColor: Colors.indigo[700],
+                    fillColor: Color.fromRGBO(23, 17, 85, 1),
                     padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
@@ -102,12 +139,12 @@ class MenuBody extends StatelessWidget {
                    Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos en Fondos",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
+                    style: TextStyle(color: Color.fromRGBO(23, 17, 85, 1),fontSize: 16),)
                     ),    
                     flex: 1,
                   )
                   ],  
-                                 
+                                
                 ),
 
               //MOVIMIENTOS CONSOLIDADOS
@@ -127,7 +164,7 @@ class MenuBody extends StatelessWidget {
                     ),
                     shape: new CircleBorder(),
                     elevation: 2.0,
-                    fillColor: Colors.indigo[700],
+                    fillColor: Color.fromRGBO(23, 17, 85, 1),
                     padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
@@ -135,7 +172,7 @@ class MenuBody extends StatelessWidget {
                  Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Movimientos Consolidados",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
+                    style: TextStyle(color: Color.fromRGBO(23, 17, 85, 1),fontSize: 16),)
                     ),
                     
                     flex: 1,
@@ -161,7 +198,7 @@ class MenuBody extends StatelessWidget {
                     ),
                     shape: new CircleBorder(),
                     elevation: 2.0,
-                    fillColor: Colors.indigo[700],
+                    fillColor: Color.fromRGBO(23, 17, 85, 1),
                     padding: const EdgeInsets.all(20.0),
                   ),
                   flex: 5,
@@ -169,7 +206,7 @@ class MenuBody extends StatelessWidget {
                    Flexible(
                     child:Padding(padding: EdgeInsets.only(top: 8),
                     child: Text("Estado de cuenta",textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.indigo[700],fontSize: 16),)
+                    style: TextStyle(color: Color.fromRGBO(23, 17, 85, 1),fontSize: 16),)
                     ),
                     
                     flex: 1,
