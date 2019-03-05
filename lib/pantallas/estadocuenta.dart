@@ -6,6 +6,12 @@ class EstadoCuenta extends StatelessWidget
   {
     return new Scaffold(
      
+     appBar: new AppBar(
+        centerTitle: true,
+            title: Text("Estado de Cuenta ",
+            textAlign: TextAlign.center),
+            backgroundColor: Color.fromRGBO(23, 17, 85, 1),
+      ),
     );
   }
 }
